@@ -1,0 +1,19 @@
+.workDay {
+    ul {
+        float: left;
+        text-align: center;
+    }
+
+    li {
+        width: 40px;
+        height: 25px;
+        line-height: 25px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        float: left;
+    }
+
+    .rightLi {
+        border-right: none;
+    }
+}

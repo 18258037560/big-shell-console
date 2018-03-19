@@ -1,0 +1,57 @@
+@import '../common/mixins/circle-line-circle';
+
+.bank-info-select-info-container {
+    display: inline;
+    align-items: flex-end;
+}
+
+.bank-info-container {
+    float: left;
+    width: 180px;
+    align-items: flex-end;
+}
+
+.bank-info-item {
+    width: 180px;
+    float: left;
+}
+
+.select-item-container {
+    width: 180px;
+    float: right;
+    margin: 10px 1px 10px;
+}
+
+.select-info-item {
+    font-size: 20px;
+    float: right;
+    width: 180px;
+}
+
+.wallet-record-list-container {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.wallet-record-list {
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.select-all-nothing-container {
+    padding: 10px 0px;
+}
+
+.select-all-button {
+    float: left;
+}
+
+.select-nothing-button {
+    float: right;
+}
+

@@ -1,0 +1,31 @@
+
+.button {
+    padding: 5px 12px;
+    color: #fff;
+    background: #108EE9;
+    border: none;
+    border-radius: 4px;
+
+    &.default {
+        color: #108EE9;
+        background: transparent;
+    }
+
+    &.save {
+        font-size: 14px;
+        color: white;
+        padding: 8px 25px;
+        background-color: #3DB8C1;
+    }
+
+    & ~ button {
+        margin-left: 10px;
+    }
+}
+
+button[disabled] {
+    cursor: not-allowed !important;
+    background: #c0c0c0 !important;
+    border: none !important;
+    color: #aaa !important;
+}

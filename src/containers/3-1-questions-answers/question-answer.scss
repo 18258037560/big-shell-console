@@ -1,0 +1,43 @@
+@import '../common/mixins/circle-line-circle';
+
+.qa-operation-list-dialog {
+
+    .order-operation-box {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .search-item-container {
+        width: 180px;
+
+        .__input {
+            width: 160px;
+        }
+    }
+
+    .order-item-wrap {
+        flex: 1;
+        margin-top: 10px;
+        border-top: 1px solid #ccc;
+        overflow: auto;
+    }
+
+    .order-item-outer {
+        @include circle-line-circle;
+    }
+
+    .order-item-content {
+        color: #333;
+        margin: 10px 15px 10px 30px;
+        padding: 5px 7px;
+        border: 1px dotted #aaa;
+        border-radius: 4px;
+    }
+
+    .order-user-date {
+        color: #aaa;
+        padding: 15px;
+    }
+}

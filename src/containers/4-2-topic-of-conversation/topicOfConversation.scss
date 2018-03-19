@@ -1,0 +1,152 @@
+@import "../common/payment-info";
+@import '../common/mixins/button-add';
+
+$border: 1px solid #e6e6e6;
+$big-border: 1px solid #bbb;
+
+.qa-order-detail {
+  color: #333;
+  .detail-title {
+    font-size: 14px;
+    color: #00a2ae;
+    border-bottom: $border;
+    padding-bottom: 5px;
+    .title-icon-container {
+      width: 25px;
+      display: inline-block;
+    }
+    img {
+      height: 20px;
+    }
+  }
+  .button-area {
+    width: 150px;
+    border-left: $border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      width: 110px;
+      @include button-add;
+    }
+  }
+
+  // 分类
+  .qa-big-category {
+    padding: 10px 0;
+    border-bottom: $big-border;
+
+    .category-item {
+      padding: 10px 0;
+      display: flex;
+      border-bottom: $border;
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+
+    .no-data {
+      padding-top: 10px;
+      color: #aaa;
+    }
+  }
+
+  .item-main-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  .qa-basic-info {
+    border-bottom: $big-border;
+    .user-basic-info {
+      border-bottom: $border;
+      padding-bottom: 10px;
+      display: flex;
+      img {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 100%;
+      }
+
+      .username, .mobile {
+        padding-left: 20px;
+      }
+    }
+
+    .qa-content {
+      padding: 15px 0;
+      border-bottom: $border;
+    }
+
+    .topic-date-time {
+      padding: 10px 0;
+      label {
+        color: gray;
+        width: 80px;
+      }
+    }
+    .question-owner {
+      border-bottom: $border;
+    }
+
+  }
+
+  @include payment-info;
+
+  .answer-info {
+    padding: 10px 0;
+    border-bottom: $big-border;
+
+    img {
+      height: 16px;
+    }
+  }
+
+  .rate-info {
+    .rate-info-item {
+      img {
+        vertical-align: sub;
+        width: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .appeal-info {
+    img {
+      height: 15px;
+    }
+  }
+  .other {
+    img {
+      height: 16px;
+    }
+  }
+}
+.like-count-avator{
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  margin: 15px 5px 0 0;
+}
+.titleInfo{
+  padding: 5px 0;
+}
+.like-Hover-Photo{
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+
+
+
+
+
